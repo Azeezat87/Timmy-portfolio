@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <div className='flex flex-col items-center justify-center text-[#16063E] relative mt-20'>
+    <section className='flex flex-col items-center justify-center text-[#16063E] relative mt-20'>
       <div className='absolute -top-3 left-56'>
         <Image src='/images/logo2.png' width={50} height={50} alt='logo' />
       </div>
@@ -19,6 +19,12 @@ export default function Hero() {
           word a better place.
         </p>
       </div>
-    </div>
+      <div>
+        <button className='border border-black '>
+          Contact me
+        </button>
+      </div>
+
+    </section>
   );
 }
