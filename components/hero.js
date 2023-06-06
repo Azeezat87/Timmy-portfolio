@@ -8,10 +8,10 @@ export default function Hero() {
         <Image src='/images/logo2.png' width={50} height={50} alt='logo' />
       </div>
       <div>
-        <h1 className='font-bold text-6xl'>Oluwatimilehin Akapo is a</h1>
+        <h1 className='font-bold text-4xl'>Oluwatimilehin Akapo is a</h1>
       </div>
       <div>
-        <h2>Skilled Product designer</h2>
+        <h2 className='font-bold text-6xl'>Skilled Product designer</h2>
       </div>
       <div>
         <p>
