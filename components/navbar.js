@@ -13,7 +13,7 @@ export default function Navbar() {
           alt='logo' />
       </div>
       <div>
-        <ul className='flex gap-10'>
+        <ul className='flex gap-10 text-base font-semibold text-[#16063E]'>
           <li>
             <Link href='/'>Home</Link>
           </li>
