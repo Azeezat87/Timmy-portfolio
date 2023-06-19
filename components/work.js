@@ -39,16 +39,16 @@ export default function Work() {
               Wellness
             </h3>
           </div>
-          <div className='flex flex-col items-center'>
+          <div className='flex flex-col items-center overflow-hidden'>
             <div className='mb-[42px]'>
               <p className='text-xl text-[#E3DAFC] w-[474px] text-center'>
                 A super app that helps you get your groceries delivered in less
                 than 10 minutes
               </p>
             </div>
-            <div className='flex'>
-              <Image src='/images/phone3.png' width={250} height={250} alt='' />
-              <Image src='/images/phone4.png' width={250} height={250} alt='' />
+            <div className='flex gap-4 rotate-[-20.81deg]'>
+              <Image src='/images/phone1.png' width={250} height={250} alt='' />
+              <Image src='/images/phone2.png' width={250} height={250} alt='' />
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Work() {
                 than 10 minutes
               </p>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex'>
               <Image src='/images/phone5.png' width={250} height={250} alt='' />
               <Image src='/images/phone6.png' width={250} height={250} alt='' />
             </div>
@@ -88,7 +88,7 @@ export default function Work() {
                 than 10 minutes
               </p>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex'>
               <Image src='/images/phone7.png' width={250} height={250} alt='' />
               <Image src='/images/phone8.png' width={250} height={250} alt='' />
             </div>
