@@ -10,8 +10,8 @@ import Work from '../components/work'
 export default function Home() {
   
   return (
-    <main className='overflow-hidden'>
-      <section className='bg-[url("/images/Frame.png")] w-full px-20 py-5'>
+    <main className='border-2 border-green-500'>
+      <section className='bg-[url("/images/Frame.png")] px-[120px]'>
         <Navbar />
         <Hero />
       </section>

@@ -97,27 +97,22 @@ const images = [
 export default function Skill() {
   return (
     <>
-    <section className='w-screen my-28 px-20 '>
-    <div className='bg-[url("/images/group.png")] bg-no-repeat w-[1200px] h-[409px] relative'>
-     {images.map((image, index) => (
-        <ListItems
-           key={index}
-           src={image.src}
-           width={image.width}
-           height={image.height}
-           className={image.className}
-        />
-        ))}
-      </div>
-    </section>
-    <section className='mb-28'>
-        <Image 
-           src='/images/frame2.png'
-           width={1440}
-           height={1440}
-           alt=''
-        />
-    </section>
+      <section className='my-28 px-[120px]'>
+        <div className='bg-[url("/images/group.png")] bg-no-repeat bg-contain w-[1120px] h-[409px] relative'>
+          {images.map((image, index) => (
+            <ListItems
+              key={index}
+              src={image.src}
+              width={image.width}
+              height={image.height}
+              className={image.className}
+            />
+          ))}
+        </div>
+      </section>
+      <section className='mb-28'>
+        <Image src='/images/frame2.png' width={1440} height={1440} alt='' />
+      </section>
     </>
   );
 }

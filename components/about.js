@@ -4,17 +4,17 @@ import {Button} from '../components/Button'
 
 export default function About() {
   return (
-    <section className='w-full my-28 px-20 font-semibold'>
+    <section className='mt-32 px-[118px] font-semibold'>
       <div>
-          <h2 className='text-[52px] [text-#16063E] mb-8'>About me</h2>
+          <h2 className='text-[52px] [text-#16063E] mb-[49px]'>About me</h2>
       </div>
-      <div className='flex gap-12'>
+      <div className='flex'>
           <div className=''>
-             <Image src='/images/profile.png' width={600} height={600} alt='' />
+             <Image src='/images/profile.png' width={554} height={554} alt='' />
            </div>
-           <div className='flex flex-col gap-5 w-[590px]'>
-             <div className='mt-8'>
-                <p className='text-lg text-[#5A5566] font-medium mb-2'>
+           <div className='flex flex-col gap-5'>
+             <div className='mt-5 w-[590px]'>
+                <p className='text-lg text-[#5A5566] font-medium mb-3'>
               An empathetic, pragmatic, and versatile product designer with over
               6 years of experience in understanding user needs and wants and
               being able to translate these insights into conceptual and visual

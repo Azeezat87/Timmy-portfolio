@@ -4,12 +4,12 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <section className=' flex justify-between'>
+    <section className='py-5 flex justify-between'>
       <div>
         <Image 
           src='/images/logo.png' 
-          width={45} 
-          height={45} 
+          width={46} 
+          height={46} 
           alt='logo' />
       </div>
       <div>
