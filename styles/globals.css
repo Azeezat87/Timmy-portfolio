@@ -8,9 +8,12 @@
   margin: 0;
 }
 
+.container {
+  @apply mx-auto max-w-[1200px];
+}
+
 body {
-  width: 100vw;
-  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .font-loader {

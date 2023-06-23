@@ -11,9 +11,11 @@ export default function Home() {
   
   return (
     <main className='border-2 border-green-500'>
-      <section className='bg-[url("/images/Frame.png")] px-[120px]'>
-        <Navbar />
-        <Hero />
+      <section className='bg-[url("/images/Frame.png")]'>
+        <div className='container'>
+          <Navbar />
+          <Hero />
+        </div>
       </section>
       <About />
       <Service />

@@ -4,32 +4,38 @@ import {Button} from '../components/Button'
 
 export default function About() {
   return (
-    <section className='mt-32 px-[118px] font-semibold'>
-      <div>
+    <section className='mt-32 font-semibold'>
+      <div className='container'>
+        <div>
           <h2 className='text-[52px] [text-#16063E] mb-[49px]'>About me</h2>
-      </div>
-      <div className='flex'>
-          <div className=''>
-             <Image src='/images/profile.png' width={554} height={554} alt='' />
-           </div>
-           <div className='flex flex-col gap-5'>
-             <div className='mt-5 w-[590px]'>
-                <p className='text-lg text-[#5A5566] font-medium mb-3'>
-              An empathetic, pragmatic, and versatile product designer with over
-              6 years of experience in understanding user needs and wants and
-              being able to translate these insights into conceptual and visual
-              design while aligning with the business goals. Supervised a
-              4-person product design team directly and collaborated with more
-              than 30 people on a cross-functional team.
-              <br />
-              <br />
-              Seeking an opportunity where I can put my knowledge of product
-              design to use, and my main goal is to provide high-caliber work
-              that will benefit any organisation.
-            </p>
+        </div>
+        <div className='flex max-w-full h-[429px] shrink-0 gap-[57px]'>
+          <div className='max-w-[533px]'>
+            <Image src='/images/profile.png' width={533} height={533} alt='' />
           </div>
-          <div className=''>
-            <Button text='Download CV' className='relative text-base border-2 border-[#16063E] px-8 py-4 font-medium'/>
+          <div className='flex flex-col gap-5'>
+            <div className='mt-5 max-w-[590px] text-lg leading-[27px] text-[#5A5566] font-medium'>
+              <p>
+                An empathetic, pragmatic, and versatile product designer with
+                over 6 years of experience in understanding user needs and wants
+                and being able to translate these insights into conceptual and
+                visual design while aligning with the business goals. Supervised
+                a 4-person product design team directly and collaborated with
+                more than 30 people on a cross-functional team.
+              </p>
+              <br/>
+              <p>
+                Seeking an opportunity where I can put my knowledge of product
+                design to use, and my main goal is to provide high-caliber work
+                that will benefit any organisation.
+              </p>
+            </div>
+            <div className=''>
+              <Button
+                text='Download CV'
+                className='relative text-base border-2 border-[#16063E] px-[33px] py-[14px] font-medium'
+              />
+            </div>
           </div>
         </div>
       </div>

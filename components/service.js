@@ -1,93 +1,50 @@
 import Image from 'next/image'
 
-export default function Service() {
- 
+const Services = ({ className, text }) => (
+  <div className={className}>
+        <Image src='/images/black.svg' width={64.5} height={64} alt="" className='mb-7' />
+       <p className='text-lg font-semibold text-[#16063E] mb-1'>
+         {text}
+       </p>
+       <p className='text-sm text-[#5A5566] font-medium leading-[21px]'>
+         Timi is an awesome product designer. She has a good eye for user
+         experience and understands how to simplify
+       </p>
+  </div>
+)
 
+const background = [
+  {
+    className: 'w-[380px] h-[240px] bg-[url("/images/bg1.png")] py-8 pl-[30.5px] pr-[29.5px]',
+    text: 'UX Research',
+  },
+  {
+    className: 'w-[380px] h-[240px] bg-[url("/images/bg2.png")] py-8 pl-[30.5px] pr-[29.5px]',
+    text: 'Visual Design',
+  },
+  {
+    className: 'w-[380px] h-[240px] bg-[url("/images/bg3.png")] py-8 pl-[30.5px] pr-[29.5px]',
+    text: 'Product Design',
+  }
+]
+
+export default function Service() {
  return (
-   <section className='mt-32 px-[120px]'>
+   <section className='mt-32'>
+     <div className='container'>
      <h1 className='text-[52px] [text-#16063E] mb-14 font-semibold'>
        Services
      </h1>
      <div className='flex gap-7'>
-       <div className='relative w-[380px] h-[240px]'>
-         <Image src='/images/bg.png' width={380} height={380} alt='' />
-         <Image
-           src='/images/rect1.png'
-           width={40}
-           height={40}
-           alt=''
-           className='absolute top-[1px] left-[315px]'
-         />
-         <div className='absolute top-7 left-7'>
-           <Image
-             src='/images/black.png'
-             width={64}
-             height={64}
-             alt=''
-             className='mb-6'
-           />
-           <p className='text-lg font-semibold text-[#16063E] mb-1'>
-             UX Research
-           </p>
-           <p className='text-sm text-[#5A5566] font-medium'>
-             Timi is an awesome product designer. She has a good eye for user
-             experience and understands how to simplify
-           </p>
-         </div>
+      {background.map((bg, index) => (
+        <Services 
+          key={index}
+          text={bg.text}
+          className={bg.className}
+        />
+      ))}
        </div>
-       <div className='relative w-[380px] h-[240px]'>
-         <Image src='/images/bg.png' width={380} height={380} alt='' />
-         <Image
-           src='/images/rect2.png'
-           width={40}
-           height={40}
-           alt=''
-           className='absolute top-[1px] left-[315px]'
-         />
-         <div className='absolute top-7 left-7'>
-           <Image
-             src='/images/black.png'
-             width={64}
-             height={64}
-             alt=''
-             className='mb-6'
-           />
-           <p className='text-lg font-semibold text-[#16063E] mb-1'>
-             Visual Design
-           </p>
-           <p className='text-sm text-[#5A5566] font-medium'>
-             Timi is an awesome product designer. She has a good eye for user
-             experience and understands how to simplify
-           </p>
-         </div>
-       </div>
-       <div className='relative w-[380px] h-[240px]'>
-         <Image src='/images/bg.png' width={380} height={380} alt='' />
-         <Image
-           src='/images/rect3.png'
-           width={40}
-           height={40}
-           alt=''
-           className='absolute top-[1px] left-[315px]'
-         />
-         <div className='absolute top-7 left-7'>
-           <Image
-             src='/images/black.png'
-             width={64}
-             height={64}
-             alt=''
-             className='mb-6'
-           />
-           <p className='text-lg font-semibold text-[#16063E] mb-1'>
-             Product Design
-           </p>
-           <p className='text-sm text-[#5A5566] font-medium'>
-             Timi is an awesome product designer. She has a good eye for user
-             experience and understands how to simplify
-           </p>
-         </div>
-       </div>
-     </div>
+    </div>
    </section>
  );
 }
