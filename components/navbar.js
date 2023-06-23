@@ -7,7 +7,7 @@ export default function Navbar() {
     <section className='py-5 flex justify-between'>
       <div>
         <Image 
-          src='/images/logo.png' 
+          src='/images/logo.svg' 
           width={46} 
           height={46} 
           alt='logo' />
