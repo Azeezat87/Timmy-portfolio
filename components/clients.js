@@ -48,8 +48,8 @@ return (
           What clients have to say
         </h1>
         <div className='flex gap-4'>
-          <img src='/images/icon.svg' alt='' />
-          <img src='/images/icon2.svg' alt='' />
+          <img src='/images/icon.svg' width='52.5px' height='40px' alt=''/>
+          <img src='/images/icon2.svg' width='52.5px' height='40px' alt='' />
         </div>
       </div>
       <div className='flex gap-7 mt-14'>
