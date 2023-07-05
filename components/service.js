@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Services = ({ className, text }) => (
   <div className={className}>
-        <Image src='/images/black.svg' width={64.5} height={64} alt="" className='mb-7' />
+        <Image src='/images/black.svg' width={64} height={64} alt="" className='mb-7' />
        <p className='text-lg font-semibold text-[#16063E] mb-1'>
          {text}
        </p>

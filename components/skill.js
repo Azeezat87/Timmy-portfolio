@@ -98,7 +98,7 @@ import Image from 'next/image';
 export default function Skill() {
   return (
     <>
-      <section className='my-28'>
+      <section className='my-32'>
         <div className='container h-[409px]'>
           <img src='/images/frame3.svg' alt='' />
         </div>
@@ -114,7 +114,7 @@ export default function Skill() {
           ))}
         </div> */}
       </section>
-      <section className='mb-28'>
+      <section className=''>
         <Image src='/images/frame2.png' width={1440} height={1440} alt='' />
       </section>
     </>
