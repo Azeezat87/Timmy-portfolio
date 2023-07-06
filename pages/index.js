@@ -7,7 +7,8 @@ import Skill from '../components/skill'
 import Work from '../components/work'
 import Clients from '../components/clients'
 import Featured from '../components/featured'
-
+import Project from '../components/project'
+import Footer from '../components/footer'
 
 export default function Home() {
   
@@ -25,6 +26,8 @@ export default function Home() {
       <Work />
       <Clients />
       <Featured />
+      <Project />
+      <Footer />
     </main>
   );
 }
