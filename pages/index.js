@@ -13,7 +13,7 @@ import Footer from '../components/footer'
 export default function Home() {
   
   return (
-    <main className='border-2 border-green-500'>
+    <main className=''>
       <section className='bg-[url("/images/Frame.png")]'>
         <div className='container'>
           <Navbar />

@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import { PDFViewer } from '@react-pdf/renderer/lib/react-pdf.browser.cjs.js';
+import MyDocument from '../MyDocument'
 import {Button} from '../components/Button'
 
 export default function About() {
   return (
-    <section className='mt-32 font-semibold'>
+    <section id='about' className='mt-32 font-semibold'>
       <div className='container'>
         <div>
           <h2 className='text-[52px] [text-#16063E] mb-[49px]'>About me</h2>
@@ -31,10 +33,12 @@ export default function About() {
               </p>
             </div>
             <div className=''>
+              <a href='/files/timmy-cv.pdf' download>
               <Button
                 text='Download CV'
-                className='relative text-base border-2 border-[#16063E] px-[33px] py-[14px] font-medium'
-              />
+                className='relative text-base border-2 border-[#16063E] px-[33px] py-[14px] font-medium'>
+              </Button> 
+              </a>
             </div>
           </div>
         </div>

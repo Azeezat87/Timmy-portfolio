@@ -1,10 +1,26 @@
 import React from 'react'
 import Image from 'next/image'
-import {Button} from '../components/Button'
+import Link from 'next/link'
+import { config } from '../utils/config'
+import { Button } from '../components/Button'
+
+const SocialAccounts = ({ href, text }) => (
+    <Link href={href}
+          target='_blank'
+          rel='noopener noreferrer'>
+       <li>{text}</li>
+    </Link>
+)
+
+const SocialMedia = [
+  { href: config.twitter_url, text: 'Twitter' },
+  { href: config.behance_url, text: 'Behance' },
+  { href: config.linkedin_url, text: 'Linkedin' },
+]
 
 export default function Hero() {
   return (
-    <section className='pt-[139px] pb-[110px]'>
+    <section id='home' className='pt-[139px] pb-[110px]'>
       <div className='flex flex-col items-center justify-center text-[#16063E] relative'>
         <div className='max-w-[1168px]'>
           <h1 className='font-semibold text-[64px] leading-[70.4px] text-center'>
@@ -28,9 +44,13 @@ export default function Hero() {
         </div>
         <div className='mt-14'>
           <ul className='flex gap-6 underline text-lg font-medium'>
-            <li>Twitter</li>
-            <li>Behance</li>
-            <li>Linkedin</li>
+            {SocialMedia.map((item, index) => (
+              <SocialAccounts 
+                  key={index}
+                  href={item.href}
+                  text={item.text}
+              />
+            ))}
           </ul>
         </div>
         <div className='absolute -top-9 left-[177px]'>

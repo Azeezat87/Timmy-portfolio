@@ -2,7 +2,7 @@
 
 export default function Featured() {
  return (
-   <section className=' flex pl-[50px]'>
+   <section className=' flex pl-[70px]'>
      <div className='w-[465px]'>
        <h1 className='text-[52px] text-[#16063E] font-medium leading-[62.4px] tracking-[-0.52px] mb-3'>
              Some
