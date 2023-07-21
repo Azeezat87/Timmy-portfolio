@@ -14,8 +14,8 @@ export default function Home() {
   
   return (
     <main className=''>
-      <section className='bg-[url("/images/Frame.png")]'>
-        <div className='container'>
+      <section className='bg-[url("/images/Frame.png")] '>
+        <div className='container mbl:px-5 '>
           <Navbar />
           <Hero />
         </div>

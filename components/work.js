@@ -44,7 +44,7 @@ export default function Work() {
   
   return (
     <section id='works' className='font-semibold mt-32'>
-      <div className='container'>
+      <div className='container md:px-5'>
         <div className='mb-9'>
           <h1 className='text-[52px] [text-#16063E]'>Selected Works</h1>
         </div>

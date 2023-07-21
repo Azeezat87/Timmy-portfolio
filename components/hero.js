@@ -23,11 +23,13 @@ export default function Hero() {
     <section id='home' className='pt-[139px] pb-[110px]'>
       <div className='flex flex-col items-center justify-center text-[#16063E] relative'>
         <div className='max-w-[1168px]'>
-          <h1 className='font-semibold text-[64px] leading-[70.4px] text-center'>
-            Oluwatimilehin Akapo is a
-          </h1>
-          <h2 className='font-bold text-[90px] leading-[99px] text-center'>
-            Skilled Product designer
+          <h2 className='font-semibold text-[64px] leading-[70.4px] text-center flex flex-wrap justify-center mbl:text-[40px] mbl:leading-[48px] mbl:tracking-[-0.4px] '>
+            Oluwatimilehin Akapo&nbsp;{' '}
+            <bdi className='mbl:font-bold'> is a </bdi>&nbsp;
+            <span className='font-bold text-[90px] leading-[99px] text-center mbl:text-[40px] mbl:leading-[48px] mbl:tracking-[-0.4px]'>
+              {' '}
+              Skilled Product designer
+            </span>
           </h2>
         </div>
         <div className='max-w-[770px] mt-3'>
@@ -45,11 +47,7 @@ export default function Hero() {
         <div className='mt-14'>
           <ul className='flex gap-6 underline text-lg font-medium'>
             {SocialMedia.map((item, index) => (
-              <SocialAccounts 
-                  key={index}
-                  href={item.href}
-                  text={item.text}
-              />
+              <SocialAccounts key={index} href={item.href} text={item.text} />
             ))}
           </ul>
         </div>

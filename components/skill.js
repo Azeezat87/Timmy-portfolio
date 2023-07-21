@@ -99,7 +99,7 @@ export default function Skill() {
   return (
     <>
       <section className='my-32'>
-        <div className='container h-[409px]'>
+        <div className='container h-[409px] md:px-5'>
           <img src='/images/frame3.svg' alt='' />
         </div>
         {/* <div className='container bg-[url("/images/group.png")] bg-no-repeat bg-contain h-[409px] relative'>

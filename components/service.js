@@ -31,7 +31,7 @@ const background = [
 export default function Service() {
  return (
    <section className='mt-32'>
-     <div className='container'>
+     <div className='container md:px-5'>
      <h1 className='text-[52px] [text-#16063E] mb-14 font-semibold'>
        Services
      </h1>

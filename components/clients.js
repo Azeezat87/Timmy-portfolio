@@ -42,13 +42,13 @@ const background = [
 export default function Clients() {
 return (
   <section className='mt-32'>
-    <div className='container'>
+    <div className='container md:px-5'>
       <div className='flex gap-[486.5px]'>
         <h1 className='text-[52px] [text-#16063E] font-semibold'>
           What clients have to say
         </h1>
         <div className='flex gap-4'>
-          <img src='/images/icon.svg' width='52.5px' height='40px' alt=''/>
+          <img src='/images/icon.svg' width='52.5px' height='40px' alt='' />
           <img src='/images/icon2.svg' width='52.5px' height='40px' alt='' />
         </div>
       </div>

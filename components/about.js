@@ -7,7 +7,7 @@ import {Button} from '../components/Button'
 export default function About() {
   return (
     <section id='about' className='mt-32 font-semibold'>
-      <div className='container'>
+      <div className='container md:px-5'>
         <div>
           <h2 className='text-[52px] [text-#16063E] mb-[49px]'>About me</h2>
         </div>
