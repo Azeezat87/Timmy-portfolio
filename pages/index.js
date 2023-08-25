@@ -13,7 +13,7 @@ import Footer from '../components/footer'
 export default function Home() {
   
   return (
-    <main className=''>
+    <>
       <section className='bg-[url("/images/Frame.png")] '>
         <div className='container mbl:px-5 '>
           <Navbar />
@@ -28,6 +28,6 @@ export default function Home() {
       <Featured />
       <Project />
       <Footer />
-    </main>
+    </>
   );
 }

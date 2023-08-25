@@ -18,7 +18,7 @@ const images = [
 export default function Footer() {
   return (
     <section className='mt-24 bg-[#F8F6FE] pt-7'>
-      <div className='container flex justify-between pb-[67px] md:px-5'>
+      <div className='container flex justify-between pb-[67px] mbl:px-5'>
         <div>
           <footer className='flex gap-2 text-lg font-medium'>
             <p>©️</p>

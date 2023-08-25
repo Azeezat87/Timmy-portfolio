@@ -2,12 +2,13 @@
 import React from 'react'
 
 const MyWork = ({ background, img, item, text, margin }) => (
-  <div
-    className={`${background} group w-[586px] h-[519px] relative rounded-[20px] pt-16 mt-8`}
-  >
-    <div className='w-[272px] h-[77px] absolute -top-10 left-[157px]'>
+  <div className='relative mt-8'>
+    <div className='w-[272px] h-[77px] absolute -top-10 left-[157px] z-10'>
       <img src={`/images/${img}`} alt='' />
     </div>
+  <div
+    className={`${background} group overflow-hidden w-[586px] h-[519px] relative rounded-[20px] pt-16 `}
+  >
     <div className='flex flex-col items-center '>
       <div className=''>
         <p className='text-xl text-[#E3DAFC] w-[474px] text-center'>{text}</p>
@@ -16,10 +17,11 @@ const MyWork = ({ background, img, item, text, margin }) => (
         <img src={`/images/${item}`} alt='' />
       </div>
     </div>
-       <div className='absolute flex items-center justify-between w-[533px] h-[70px] bg-[#16063E80] bottom-7 left-[26px] rounded-[50px] backdrop-blur-[5px] pl-[28.5px] pr-[32px] text-white text-xl font-medium'>
+       <div className='absolute flex items-center justify-between w-[533px] h-[70px] bg-[#16063E80] duration-500 transition-[bottom] -bottom-20 group-hover:bottom-7 left-[26px] rounded-[50px] backdrop-blur-[5px] pl-[28.5px] pr-[32px] text-white text-xl font-medium'>
       <p>Read Case Study</p>
       <img src='/images/case-study.png' width='42px' height='32px' alt='' />
       </div>
+  </div>
   </div>
 );
 
@@ -44,7 +46,7 @@ export default function Work() {
   
   return (
     <section id='works' className='font-semibold mt-32'>
-      <div className='container md:px-5'>
+      <div className='container mbl:px-5'>
         <div className='mb-9'>
           <h1 className='text-[52px] [text-#16063E]'>Selected Works</h1>
         </div>

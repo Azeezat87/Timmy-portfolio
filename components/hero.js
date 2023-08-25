@@ -21,19 +21,18 @@ const SocialMedia = [
 export default function Hero() {
   return (
     <section id='home' className='pt-[139px] pb-[110px]'>
-      <div className='flex flex-col items-center justify-center text-[#16063E] relative'>
-        <div className='max-w-[1168px]'>
-          <h2 className='font-semibold text-[64px] leading-[70.4px] text-center flex flex-wrap justify-center mbl:text-[40px] mbl:leading-[48px] mbl:tracking-[-0.4px] '>
-            Oluwatimilehin Akapo&nbsp;{' '}
-            <bdi className='mbl:font-bold'> is a </bdi>&nbsp;
-            <span className='font-bold text-[90px] leading-[99px] text-center mbl:text-[40px] mbl:leading-[48px] mbl:tracking-[-0.4px]'>
-              {' '}
-              Skilled Product designer
+      <div className='flex flex-col items-center justify-center text-[#16063E] relative '>
+        <div className=''>
+          <h2 className='max-w-[800px] font-semibold text-[64px] leading-[70.4px] text-center justify-center mbl:text-start mbl:text-[42px] mbl:leading-[48px] mbl:tracking-[-0.4px] '>
+            Oluwatimilehin Akapo
+            <bdi className='mbl:font-bold'> is a </bdi>
+            <span className='max-w-[1168px] font-bold text-[90px] leading-[99px] text-center mbl:text-[42px] mbl:leading-[48px] mbl:tracking-[-0.4px]'>
+              skilled Product designer
             </span>
           </h2>
         </div>
         <div className='max-w-[770px] mt-3'>
-          <p className='text-[26px] font-medium text-center text-[#5A5566] leading-[36px]'>
+          <p className='text-[26px] font-medium text-center text-[#5A5566] leading-[36px] mbl:text-start mbl:text-[16px] mbl:leading-[24px] mbl:tracking-[-0.4px]'>
             As a designer I believe “Design” is a powerful tool that can make
             the world a better place.
           </p>
@@ -51,8 +50,11 @@ export default function Hero() {
             ))}
           </ul>
         </div>
-        <div className='absolute -top-9 left-[177px]'>
+        <div className='absolute -top-9 left-[177px] mbl:hidden'>
           <Image src='/images/face.svg' width={91} height={91} alt='face' />
+        </div>
+        <div className='hidden absolute -top-9 left-[177px] mbl:block'>
+          <Image src='/images/face2.svg' width={91} height={91} alt='face' />
         </div>
         <div>
           <Image
@@ -60,7 +62,7 @@ export default function Hero() {
             width={159}
             height={159}
             alt=''
-            className='absolute top-14 right-[14px]'
+            className='absolute top-14 right-[14px] mbl:hidden'
           />
         </div>
         <div>

@@ -42,7 +42,7 @@ const background = [
 export default function Clients() {
 return (
   <section className='mt-32'>
-    <div className='container md:px-5'>
+    <div className='container mbl:px-5'>
       <div className='flex gap-[486.5px]'>
         <h1 className='text-[52px] [text-#16063E] font-semibold'>
           What clients have to say
